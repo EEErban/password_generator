@@ -1,5 +1,5 @@
 ## Password Generator ##
 A simple but effective password generator project 
 
-##LINK##
+## LINK ##
 Click here>>> https://eeerban.github.io/password_generator/
