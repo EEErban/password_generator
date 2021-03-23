@@ -36,7 +36,7 @@ var shouldIncludeLowercase = confirm("Do you want to use Lowercase letters?")
 var shouldIncludeSpecial = confirm("Do you want to use Special characters?")
 
 //Prompt for Numbers character
-var shouldIncludeNumbers = confirm("Do you want to use Numeric characters?")
+var shouldIncludeNumbers = confirm("Do you want to use Numerical characters?")
 }
 
 
