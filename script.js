@@ -37,8 +37,24 @@ var shouldIncludeSpecial = confirm("Do you want to use Special characters?");
 
 //Prompt for Numbers character
 var shouldIncludeNumbers = confirm("Do you want to use Numerical characters?");
+
+if (!shouldIncludeUppercase && !shouldIncludeLower && !shouldIncludeSpecial && !shouldIncludeNumbers) {
+  alert("Your password must contain at least one special, numeric, lowercase, or uppercase character!");
+  return;
 }
 
+var questionOptions = {
+  length: length,
+  special: shouldIncludeSpecial,
+  numbers: shouldIncludeNumbers,
+  lowerCase: shouldIncludeLowercase,
+  upperCase: shouldIncludeUppercase,
+
+}
+
+return questionOptions;
+
+}
 
 
 // Write password to the #password input
@@ -47,6 +63,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+
+  
 
 }
 
