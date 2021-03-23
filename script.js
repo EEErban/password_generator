@@ -27,16 +27,16 @@ function generateOptions () {
   }
 
 //Prompt for Uppercase character
-var shouldIncludeUppercase = confirm("Do you want to use Uppercase letters?")
+var shouldIncludeUppercase = confirm("Do you want to use Uppercase letters?");
 
 //Prompt for Lowercase character
-var shouldIncludeLowercase = confirm("Do you want to use Lowercase letters?")
+var shouldIncludeLowercase = confirm("Do you want to use Lowercase letters?");
 
 //Prompt for Special character
-var shouldIncludeSpecial = confirm("Do you want to use Special characters?")
+var shouldIncludeSpecial = confirm("Do you want to use Special characters?");
 
 //Prompt for Numbers character
-var shouldIncludeNumbers = confirm("Do you want to use Numerical characters?")
+var shouldIncludeNumbers = confirm("Do you want to use Numerical characters?");
 }
 
 
