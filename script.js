@@ -3,13 +3,13 @@ var generateBtn = document.querySelector("#generate");
 
 // Password character arrays
 
-const UppercaseChar =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+var UppercaseChar =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-const LowercaseChar =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var LowercaseChar =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 
-const NumbersChar =["0","1","2","3","4","5","6","7","8","9"];
+var NumbersChar =["0","1","2","3","4","5","6","7","8","9"];
 
-const SpecialChar =["!","?","@","£","$","%","&","+","#"];
+var SpecialChar =["!","?","@","£","$","%","&","+","#"];
 
 // Variable for user input
 // Prompt user to use at least 8 characters
@@ -26,8 +26,20 @@ function generateOptions () {
     return;
   }
 
+//Prompt for Uppercase character
+var shouldIncludeUppercase = confirm("Do you want to use Uppercase letters?")
 
+//Prompt for Lowercase character
+var shouldIncludeLowercase = confirm("Do you want to use Lowercase letters?")
+
+//Prompt for Special character
+var shouldIncludeSpecial = confirm("Do you want to use Special characters?")
+
+//Prompt for Numbers character
+var shouldIncludeNumbers = confirm("Do you want to use Numeric characters?")
 }
+
+
 
 // Write password to the #password input
 function writePassword() {
